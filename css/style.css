@@ -1,0 +1,265 @@
+/* CSS styling for all page are done here */ 
+/* COMP 266: Unit 5 CSS Site Design */
+/* Noah Cristina: 34582526*/
+
+:root {
+  --background: rgba(210,210,210)
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+nav  {
+  text-align: right;
+  top: 100%
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 0em;
+  margin-right: 2em;
+  margin-bottom: 0;
+  padding-top: 20px;
+
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+/* .big-image refers to the home page */
+.big-image {
+  height: 300vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-image: url("../images/1.png");
+  background-repeat: no-repeat;
+}
+
+/* .big-image2 refers to the FED page */
+.big-image2 {
+  height: 400vh;
+  width: 100vw;
+  position: relative;
+  background-size: auto;
+  background-image: url("../images/1.png");
+  background-repeat: no-repeat;
+}
+
+/* .big-image3 refers to the site page */
+.big-image3 {
+  height: 150vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-image: url("../images/1.png");
+  background-repeat: no-repeat;
+}
+
+/* .big-image4 refers to the contact page */
+.big-image4 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-image: url("../images/1.png");
+  background-repeat: no-repeat;
+}
+
+/* .big-image5 refers to the about page */
+.big-image5 {
+  height: 200vh;
+  width: 100vw;
+  position: relative;
+  background-size: auto;
+  background-image: url("https://images.unsplash.com/photo-1634156541649-f418858f5b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.65);
+  color: rgba(255,255,255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.center2 {
+  color: rgba(255,255,255);
+  flex-direction: column;
+  margin: auto;
+  width: 20%;
+}
+  
+
+.title {
+  margin: auto;
+  width: 30%;
+  position: center;
+  color: white;
+  border: 3px solid #ffffff;
+  padding: 10px; 
+  align-items: center;
+  justify-content: center;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cormorant SC', serif;
+  
+  }
+  
+.Cormorant {
+  font-family: 'Cormorant SC', serif;
+  color:white
+  }
+
+.margin {
+  margin: 2;
+}
+
+.text
+{
+  margin: auto;
+  width: 75%;
+  position: center;
+  color: white;
+  border: 3px solid #ffffff;
+  padding: 10px; 
+  align-items: center;
+  justify-content: center;   
+  display: flex;
+      justify-content: center;
+      align-items: center;
+} 
+
+body {
+  margin: 0;
+  background:rgb(27,26,26);
+
+}
+
+button {
+	margin: auto;
+	background-color: rgb(233, 205, 208);
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+	padding: 10px;
+	margin: 10px;
+	width: 300px;
+  	place-items: center;
+}
+
+a:hover {
+  color: rgb(233, 205, 208);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.spy-size {
+  font-size: 50px;
+}
+
+/* mobile uses Iphone SE for reference 375 x 667 */
+@media screen and (max-width: 600px) {
+  nav li {
+    display: inline-block;
+    margin-left: 0em;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+    padding-top: 0px;
+  
+  }
+  .center2{
+    margin: auto;
+    width: 85%;
+    color: rgba(255,255,255);
+  }
+  .big-image {
+    height: 280vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+  }
+  .big-image2 {
+    height: 420vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1634156541649-f418858f5b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+    background-repeat: no-repeat;
+  }
+  .big-image3 {
+    height: 170vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .big-image4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+  }
+  .big-image5 {
+    height: 240vh;
+    width: 100vw;
+    position: relative;
+    background-size: auto;
+    background-image: url("https://images.unsplash.com/photo-1634156541649-f418858f5b62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80");
+    background-repeat: no-repeat;
+    color: white;
+  }
+  table {
+    margin-left: 20px;
+    margin-right: 20px;
+   
+  }
+  h2 {
+    margin-left: 10px;
+    margin-right: 10px; 
+    position: center;
+  }
+  .screenlimit{
+    width:365px;
+    word-wrap: break-word;
+    padding: 10px;
+    color: white;
+  }
+  footer{
+    padding :10px;
+  }
+
+  .center2{
+    margin: auto;
+    width: 85%;
+    color: rgba(255,255,255);
+  }
+  /* disabled widget for mobile sizes as it doesnt scale nicely  */
+  .tradingview-widget-container{
+    display: none;
+  }
+}
+

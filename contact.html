@@ -1,0 +1,68 @@
+<!-- COMP 266: Unit 2 HTML Site Design -->
+<!-- Noah Cristina: 34582526 -->
+<!-- background Image design source : https://codepen.io/DZuz14/pen/jOPWLgz Daniel Zuzevich -->
+
+<!doctype html>
+<html lang="en">
+<head>  
+    <title>Financial Info</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&display=swap" rel="stylesheet">   
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>  
+      <ul class="nav" id="menuBar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="FED.html">FED</a></li>
+      <li><a href="sites.html">Sites</a></li>
+      <li><a href="contact.html">Contact</a></li> 
+      <li><a href="about.html">About</a></li> 
+      </ul>
+  </nav> 
+  <script src="script/formValidation.js"></script>
+      <div class="big-image4">
+          <div class="overlay">
+            <!-- Site Name -->
+            <div class="Cormorant">
+              <header><h1>Financial Info</h1></header>  
+            </div>
+          <h2>Contact Me</h2>
+          <div class="contactContainer">
+            <div class="column">
+              <!-- fourm -->
+              <form name="contactForm" onsubmit="return(formValadation())">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                  <br> 
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="other">Other</option>
+                  </select><br>
+                  <br> 
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Fill in..."></textarea><br>
+                  <br> 
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something..."></textarea><br>
+                  <br> 
+                  
+                  <input type="submit" value="Submit" onclick="javascript:alert('Your message has been sent')">
+              </form>
+            </div>
+          </div>
+          <br>
+          <!-- page footer -->
+          <footer>
+            © 2022 - Noah Cristina - last edited 2022/11/11
+          </footer>
+          </div>
+      </div>        
+</body> 
+</html>
